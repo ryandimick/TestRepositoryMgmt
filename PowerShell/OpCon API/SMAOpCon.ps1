@@ -159,7 +159,7 @@ param(
         {
             return $null;
         }
-        Write-Host ($dailySchedules | Format-Table | Out-String)
+        Write-Verbose ($dailySchedules | Format-Table | Out-String)
         return $dailySchedules[0]
     }           
     else
